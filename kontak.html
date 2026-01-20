@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>🏛️ Konsultasi Hukum | Imam AR, S.H., M.H.</title>
+  <meta name="description" content="Konsultasi hukum online bersama Imam AR, S.H., M.H. untuk perkara perdata, pidana, keluarga, waris, dan bisnis.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">IMAM AR</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="profile.html">Profil</a></li>
+        <li class="nav-item"><a class="nav-link" href="layanan.html">Layanan</a></li>
+        <li class="nav-item"><a class="nav-link" href="artikel.html">Artikel</a></li>
+        <li class="nav-item"><a class="nav-link active btn btn-gold text-dark ms-2" href="kontak.html">Konsultasi</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO MINI -->
+<section class="hero-mini">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h1 class="fade-up">Konsultasi Hukum</h1>
+    <p class="fade-up delay-1">Hubungi kami untuk pendampingan hukum profesional</p>
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="section bg-light">
+  <div class="container text-center">
+    <h2 class="section-title text-center fade-up">Form Konsultasi</h2>
+
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="about-box fade-up delay-1">
+		 <div id="notifSukses" class="alert alert-success d-none text-center mb-3">
+		  Pesan siap dikirim ke WhatsApp. Mengalihkan...
+		 </div>
+          <form onsubmit="kirimWA(); return false;">
+            <div class="mb-3">
+              <label class="form-label">Nama Lengkap</label>
+              <input type="text" id="nama" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Alamat</label>
+              <input type="text" id="alamat" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Jenis Perkara</label>
+              <select id="jenis" class="form-select" required>
+                <option value="">-- Pilih Jenis --</option>
+                <option>Hukum Perdata</option>
+                <option>Hukum Pidana</option>
+                <option>Hukum Waris</option>
+                <option>Hukum Keluarga</option>
+                <option>Sengketa Bisnis</option>
+                <option>Lainnya</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Kronologi Singkat</label>
+              <textarea id="pesan" rows="4" class="form-control" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-gold w-100">
+              <i class="fab fa-whatsapp"></i> Kirim Konsultasi via WhatsApp
+            </button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container text-center">
+    <h2 class="section-title fade-up">Informasi Kantor</h2>
+
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="about-box fade-up delay-1 text-center">
+
+  <h4 class="text-gold mb-2">IMAM AR, S.H., M.H.</h4>
+  <p class="mb-1">Advocate & Legal Consultant</p>
+  <p class="mb-2">Madiun, Jawa Timur</p>
+
+  <hr class="my-3">
+
+  <p class="mb-2">
+    <i class="fa fa-clock text-gold"></i>  
+    Senin – Sabtu | 08.00 – 20.00 WIB
+  </p>
+
+  <p class="mb-3">
+    <i class="fa fa-whatsapp text-gold"></i>  
+    <a href="https://wa.me/6285749275680" class="text-gold text-decoration-none">
+      +62 857-4927-5680
+    </a>
+  </p>
+
+  <!-- QR WHATSAPP -->
+  <div class="mb-3">
+    <p class="fw-semibold mb-2">Scan untuk Konsultasi WhatsApp</p>
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://wa.me/6285749275680"
+         alt="QR WhatsApp Imam AR"
+         class="img-fluid rounded shadow">
+  </div>
+
+  <a href="https://wa.me/6285749275680" class="btn btn-gold mt-2">
+    <i class="fa fa-comments"></i> Konsultasi Sekarang
+  </a>
+
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container text-center">
+    <h2 class="section-title fade-up">Lokasi Kantor</h2>
+
+    <div class="ratio ratio-16x9 fade-up delay-1">
+      <iframe 
+        src="https://www.google.com/maps?q=Madiun,Jawa%20Timur&output=embed"
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<footer class="footer text-center">
+  <div class="container">
+    <p class="mb-1">IMAM AR, S.H., M.H. – Advocate & Legal Consultant</p>
+    <p class="mb-1">Madiun | WhatsApp: 6285749275680</p>
+    <p class="small">© 2026 All Rights Reserved</p>
+  </div>
+</footer>
+
+<a href="https://wa.me/6285749275680" class="wa-float" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<script>
+function kirimWA() {
+  const nama = document.getElementById("nama").value;
+  const alamat = document.getElementById("alamat").value;
+  const jenis = document.getElementById("jenis").value;
+  const pesan = document.getElementById("pesan").value;
+
+  const text = `Halo, saya ingin konsultasi hukum:
+
+Nama: ${nama}
+Alamat: ${alamat}
+Jenis Perkara: ${jenis}
+Kronologi: ${pesan}`;
+
+  document.getElementById("notifSukses").classList.remove("d-none");
+
+  const url = "https://wa.me/6285749275680?text=" + encodeURIComponent(text);
+
+  setTimeout(function() {
+    window.open(url, "_blank");
+  }, 800);
+}
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

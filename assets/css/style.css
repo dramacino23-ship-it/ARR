@@ -19,7 +19,9 @@ body {
 
 .hero {
   height: 100vh;
-  background: url('https://images.unsplash.com/photo-1589395937772-f67057e233b7') center/cover;
+  background:
+    linear-gradient(135deg, rgba(17,24,39,0.8), rgba(31,41,55,0.85)),
+    url('https://images.unsplash.com/photo-1589395937772-f67057e233b7') center/cover no-repeat;
   position: relative;
   color: white;
 }
@@ -224,4 +226,19 @@ body {
   background: linear-gradient(180deg, #f9f9f9, #ffffff);
   border-top: 1px solid rgba(0,0,0,0.05);
   border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+/* Background elegan untuk semua section terang */
+.section.bg-light {
+  background: linear-gradient(180deg, #f9fafb 0%, #eef1f5 100%);
+}
+
+/* Biar kartu kelihatan floating & premium */
+.about-box,
+.service-box,
+.article-box,
+.profile-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
