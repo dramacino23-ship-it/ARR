@@ -242,3 +242,30 @@ body {
   border-radius: 16px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
+
+/* KHUSUS BOX GELAP UNTUK PROFIL & LAYANAN */
+.profile-card,
+.service-box {
+  background: #0b0b0b;
+  color: #ffffff;
+  border: 1px solid rgba(212,175,55,0.4);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+}
+
+.profile-card h4,
+.profile-card h5,
+.service-box h5 {
+  color: #d4af37;
+}
+
+.profile-card p,
+.service-box p,
+.profile-card li {
+  color: #e5e5e5;
+}
+
+/* Ikon tetap emas */
+.profile-card i,
+.service-box i {
+  color: #d4af37;
+}
